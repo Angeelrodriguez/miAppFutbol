@@ -1,0 +1,13 @@
+# Archivos compilados de Java
+*.class
+/target/
+/bin/
+/build/
+
+# Configuraciones de VS Code y otros IDEs
+.vscode/
+.idea/
+*.iml
+
+# Archivos ocultos de Apple
+.DS_Store
