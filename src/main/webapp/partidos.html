@@ -3,31 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>App del Equipo - Inicio</title>
+    <title>App del Equipo - Partidos</title>
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
     <header class="app-topbar">
-        <h1>Mi Equipo FC</h1>
+        <h1>Partidos</h1>
     </header>
 
     <main class="app-content">
-        <div class="tarjeta-bienvenida">
-            <h2>¡Vamos equipo! ⚽</h2>
-            <p>Próximo partido: Sábado 18:00</p>
+        <div class="cabecera-vista">
+            <h2>Calendario</h2>
+            <button class="btn-pequeno">+ Nuevo</button>
         </div>
-        <div class="menu-botones">
-            <button class="btn-primario">Añadir Estadísticas</button>
-            <button class="btn-secundario">Ver Ranking</button>
+        
+        <div class="tarjeta-partido">
+            <div class="fecha-partido">12 Octubre - 18:00</div>
+            <div class="marcador">
+                <span class="equipo">Mi Equipo FC</span>
+                <span class="resultado">3 - 1</span>
+                <span class="equipo">Rayo Vallecano B</span>
+            </div>
         </div>
     </main>
 
     <nav class="app-bottom-nav">
-        <a href="index.html" class="nav-item activo">
+        <a href="index.html" class="nav-item">
             <span class="nav-icon">🏠</span>
             <span class="nav-label">Inicio</span>
         </a>
-        <a href="partidos.html" class="nav-item">
+        <a href="partidos.html" class="nav-item activo">
             <span class="nav-icon">📅</span>
             <span class="nav-label">Partidos</span>
         </a>
