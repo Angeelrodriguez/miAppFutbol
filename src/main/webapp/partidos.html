@@ -14,16 +14,11 @@
     <main class="app-content">
         <div class="cabecera-vista">
             <h2>Calendario</h2>
-            <button class="btn-pequeno">+ Nuevo</button>
+            <a href="nuevo-partido.html" class="btn-pequeno" style="text-decoration: none;">+ Nuevo</a>
         </div>
         
-        <div class="tarjeta-partido">
-            <div class="fecha-partido">12 Octubre - 18:00</div>
-            <div class="marcador">
-                <span class="equipo">Mi Equipo FC</span>
-                <span class="resultado">3 - 1</span>
-                <span class="equipo">Rayo Vallecano B</span>
-            </div>
+        <!-- Contenedor vacío donde JS inyectará los partidos -->
+        <div id="contenedor-partidos">
         </div>
     </main>
 
@@ -41,5 +36,8 @@
             <span class="nav-label">Jugadores</span>
         </a>
     </nav>
+
+    <!-- Conexión con JavaScript -->
+    <script src="js/app.js"></script>
 </body>
 </html>

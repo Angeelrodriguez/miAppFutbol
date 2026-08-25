@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>App del Equipo - Nuevo Partido</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header class="app-topbar header-con-volver">
+        <a href="partidos.html" class="btn-volver">🔙</a>
+        <h1>Nuevo Partido</h1>
+    </header>
+
+    <main class="app-content">
+        <form class="formulario-app" id="form-partido">
+            
+            <div class="form-group">
+                <label for="fecha">Fecha y Hora</label>
+                <input type="datetime-local" id="fecha" name="fecha" required>
+            </div>
+
+            <div class="form-group">
+                <label for="rival">Equipo Rival</label>
+                <input type="text" id="rival" name="rival" placeholder="Ej: Rayo Vallecano B" required>
+            </div>
+
+            <!-- NUEVO: Resultado del partido -->
+            <div class="form-group">
+                <label>Resultado (Opcional - Rellenar al terminar)</label>
+                <div style="display: flex; gap: 10px; align-items: center; justify-content: space-between;">
+                    <div style="text-align: center; width: 45%;">
+                        <span style="font-size: 12px; color: #8e8e93;">DPG FC</span>
+                        <input type="number" id="goles-local" placeholder="0" min="0" style="margin-top: 5px;">
+                    </div>
+                    <span style="font-weight: bold; font-size: 20px;">-</span>
+                    <div style="text-align: center; width: 45%;">
+                        <span style="font-size: 12px; color: #8e8e93;">Rival</span>
+                        <input type="number" id="goles-visitante" placeholder="0" min="0" style="margin-top: 5px;">
+                    </div>
+                </div>
+            </div>
+
+            <!-- NUEVO: Selector de goleadores -->
+            <div class="form-group">
+                <label>Goleadores nuestros</label>
+                <div style="display: flex; gap: 10px;">
+                    <select id="select-goleador" style="flex: 1;">
+                        <option value="" disabled selected>Selecciona un jugador...</option>
+                        <!-- JavaScript rellenará esto con los nombres -->
+                    </select>
+                    <button type="button" id="btn-add-goleador" class="btn-pequeno">Añadir</button>
+                </div>
+                <!-- Aquí aparecerá la lista de los que vamos añadiendo -->
+                <ul id="lista-goleadores-form" style="margin-top: 10px; list-style-type: none; padding: 0; color: #007aff; font-size: 14px;">
+                </ul>
+            </div>
+
+            <button type="submit" class="btn-primario btn-formulario">Guardar Partido</button>
+        </form>
+    </main>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

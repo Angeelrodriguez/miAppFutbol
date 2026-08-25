@@ -8,18 +8,31 @@
 </head>
 <body>
     <header class="app-topbar">
-        <h1>Mi Equipo FC</h1>
+        <h1>Inicio</h1>
     </header>
 
     <main class="app-content">
-        <div class="tarjeta-bienvenida">
-            <h2>¡Vamos equipo! ⚽</h2>
-            <p>Próximo partido: Sábado 18:00</p>
+        <div class="cabecera-vista">
+            <h2>Bienvenido, Míster</h2>
         </div>
-        <div class="menu-botones">
-            <button class="btn-primario">Añadir Estadísticas</button>
-            <button class="btn-secundario">Ver Ranking</button>
+        
+        <!-- Tarjeta del próximo partido -->
+        <div style="background: white; border-radius: 10px; padding: 15px; margin-bottom: 30px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+            <h3 style="margin-top: 0; color: #1c1c1e;">Próximo Partido</h3>
+            <div id="widget-proximo-partido">
+                <!-- JavaScript inyectará el partido aquí -->
+            </div>
         </div>
+
+        <!-- Botón para ir a añadir estadísticas -->
+        <a href="estadisticas.html" class="btn-primario" style="display: block; text-align: center; text-decoration: none; padding: 15px; border-radius: 12px; font-weight: bold; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin: 0 10px 15px 10px;">
+            📊 Añadir Estadísticas
+        </a>
+        
+        <!-- NUEVO: Botón para ver la tabla -->
+        <a href="tabla-estadisticas.html" class="btn-primario" style="display: block; text-align: center; text-decoration: none; padding: 15px; border-radius: 12px; font-weight: bold; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin: 0 10px; background-color: #34c759; border: none;">
+            🏆 Ver Tabla de Goleadores
+        </a>
     </main>
 
     <nav class="app-bottom-nav">
@@ -36,5 +49,7 @@
             <span class="nav-label">Jugadores</span>
         </a>
     </nav>
+
+    <script src="js/app.js"></script>
 </body>
 </html>

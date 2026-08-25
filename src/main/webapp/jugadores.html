@@ -14,26 +14,11 @@
     <main class="app-content">
         <div class="cabecera-vista">
             <h2>Nuestros Jugadores</h2>
-            <button class="btn-pequeno">+ Nuevo</button>
+            <a href="nuevo-jugador.html" class="btn-pequeno" style="text-decoration: none;">+ Nuevo</a>
         </div>
 
-        <div class="lista-jugadores">
-            <div class="jugador-item">
-                <div class="avatar">👦🏻</div>
-                <div class="info-jugador">
-                    <span class="nombre-jugador">Carlos García</span>
-                    <span class="posicion-jugador">Delantero</span>
-                </div>
-                <div class="dorsal">9</div>
-            </div>
-            <div class="jugador-item">
-                <div class="avatar">👨🏽</div>
-                <div class="info-jugador">
-                    <span class="nombre-jugador">David Ruiz</span>
-                    <span class="posicion-jugador">Defensa</span>
-                </div>
-                <div class="dorsal">4</div>
-            </div>
+        <!-- Contenedor vacío donde JS inyectará los jugadores -->
+        <div class="lista-jugadores" id="contenedor-jugadores">
         </div>
     </main>
 
@@ -51,5 +36,8 @@
             <span class="nav-label">Jugadores</span>
         </a>
     </nav>
+
+    <!-- Conexión con JavaScript -->
+    <script src="js/app.js"></script>
 </body>
 </html>
